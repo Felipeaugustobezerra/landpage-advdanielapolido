@@ -1,0 +1,35 @@
+name: Deploy para Hostinger via FTP (Vite)
+
+on:
+  push:
+    branches:
+      - master # Executa apenas quando há push na branch master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18 # Altere para a versão do seu projeto
+
+      - name: Instalar dependências e garantir react-icons
+        run: |
+          npm install   # Garante que todas as dependências estão instaladas corretamente
+
+      - name: Build do projeto com Vite
+        run: npm run build
+
+      - name: Enviar arquivos via FTP para Hostinger
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/ # Diretório gerado pelo Vite
+          server-dir: /public_html/ # Ajuste para onde quer fazer o deploy
