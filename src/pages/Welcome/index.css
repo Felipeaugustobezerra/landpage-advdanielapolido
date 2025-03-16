@@ -1,0 +1,70 @@
+.container-welcome {
+  width: 100%;
+}
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+}
+.image-welcome {
+  width: 50%;
+
+  position: relative; /* Necessário para posicionamento absoluto da faixa */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 50px;
+}
+
+.image-welcome::before {
+  content: "";
+  position: absolute;
+  width: 35%;
+  height: 100%;
+  background-color: var(--tertiary-color);
+  z-index: 0; /* Mantém a faixa atrás da imagem */
+}
+
+.image-welcome img {
+  width: 50%;
+  object-fit: cover;
+  position: relative; /* Para garantir que a imagem fique na frente da faixa */
+  z-index: 1;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+.text-welcome {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative; /* Necessário para posicionamento absoluto do formulário */
+}
+.text-welcome .text {
+  color: var(--tertiary-color);
+  font-size: 2rem;
+  text-align: center;
+}
+.text-welcome .text p {
+  font-family: "poppins", sans-serif;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+}
+/* .text-welcome .forms {
+  position: absolute;
+  right: 0; 
+  top: calc(-130%); 
+  width: 50%;
+  height: auto;
+  overflow: hidden; 
+} 
+
+.text-welcome .forms img {
+  width: 180%;
+  height: auto;
+  object-fit: cover;
+  margin-left: 50px;
+}
+  */
