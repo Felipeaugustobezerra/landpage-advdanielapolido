@@ -1,14 +1,16 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import Navbar from "./components/Navbar/Navbar";
+
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Welcome from "./pages/Welcome";
+import About from "./pages/About/index";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <Welcome />
+      <About />
       <Routes>
         {/* <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
