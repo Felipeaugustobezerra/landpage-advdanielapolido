@@ -1,65 +1,66 @@
 .container-navbar {
   position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 150px;
   color: white;
-  padding: 0px 50px;
+  padding: 0 50px;
   z-index: 10;
 }
+
 .logo-img img {
   width: 200px;
   cursor: pointer;
 }
-.nav-links a {
+
+.nav-links span {
   text-decoration: none;
   font-size: 1.5rem;
   margin-right: 2rem;
   color: var(--tertiary-color);
+  cursor: pointer;
+  transition: color 0.3s;
 }
-.nav-links a:hover {
+
+.nav-links span:hover {
   color: #9d1f35;
 }
 
-/* Estilos gerais (Desktop, telas grandes) */
+/* Esconde o menu hamburguer (Drawer) em telas grandes */
 @media (min-width: 1025px) {
-  /* Layout para desktop e telas grandes */
   .dropdown_menu {
     display: none;
   }
 }
 
-/* Tablet em modo paisagem */
+/* Tablet e telas menores */
 @media screen and (max-width: 1024px) {
-  .container {
+  .container-navbar {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 150px;
-    background: rgb(0, 0, 0);
     background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.8) 10%,
       rgba(0, 0, 0, 0.7) 52%,
       rgba(0, 0, 0, 0.6) 92%
     );
-
+    padding: 0 20px;
+    height: 150px;
     z-index: 100;
   }
+
   .logo-img img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 180px;
     margin-left: 10%;
   }
+
   .nav-links {
-    display: none;
+    display: none; /* Some os links normais */
   }
+
   .dropdown_menu {
     position: relative;
     right: -30%;
@@ -68,59 +69,35 @@
 
 /* Tablet em modo retrato */
 @media screen and (max-width: 800px) {
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 150px;
-    background-color: #1a1a1a;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.8) 10%,
-      rgba(0, 0, 0, 0.7) 52%,
-      rgba(0, 0, 0, 0.6) 92%
-    );
-    z-index: 100;
+  .container-navbar {
+    padding: 0 15px;
   }
+
   .logo-img img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 180px;
-    margin-left: 10%;
+    width: 170px;
   }
-  .nav-links {
-    display: none;
-  }
+
   .dropdown_menu {
-    position: relative;
     right: -24%;
   }
 }
 
 /* Smartphones grandes */
 @media (max-width: 600px) {
-  /* Layout para smartphones grandes */
   .dropdown_menu {
-    position: relative;
     right: -22%;
   }
 }
 
 /* Smartphones pequenos */
 @media (max-width: 480px) {
-  /* Layout para smartphones pequenos */
   .dropdown_menu {
-    position: relative;
     right: -18%;
   }
 }
+
 @media (max-width: 390px) {
-  /* Layout para smartphones pequenos */
   .dropdown_menu {
-    position: relative;
     right: -14%;
   }
 }

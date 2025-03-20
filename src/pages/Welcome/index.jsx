@@ -7,7 +7,7 @@ const Welcome = () => {
       <Navbar />
       <div className="welcome">
         <div className="image-welcome">
-          <img src={cover} alt="" />
+          <img src={cover} alt="Advogada trabalhista Daniela Polido" />
         </div>
         <div className="text-welcome">
           <div className="text">

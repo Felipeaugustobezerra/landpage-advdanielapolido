@@ -7,15 +7,16 @@ const About = () => {
       <div className="about">
         <h1>Sobre</h1>
         <p>
-          Me chamo <b>Daniela Polido</b> e, antes de tudo, sou filha, irmã,
-          esposa e mãe. Foi a segurança da minha família que me fez sair da zona
-          de conforto e repensar o significado de &quot;lar&quot;. Minha paixão
-          pelo Direito me acompanha <b>há mais de 20 anos</b> , especialmente no
-          campo do Direito do Trabalho. Ao escolher Portugal como minha nova
-          casa, reencontrei minhas raízes e construí uma ponte entre dois mundos
-          que fazem parte de mim. Meu coração é metade Brasil, metade Portugal.
+          Me chamo <b className="bold">Daniela Polido</b> e, antes de tudo, sou
+          filha, irmã, esposa e mãe. Foi a segurança da minha família que me fez
+          sair da zona de conforto e repensar o significado de &quot;lar&quot;.
+          Minha paixão pelo Direito me acompanha{" "}
+          <b className="bold">há mais de 20 anos</b> , especialmente no campo do
+          Direito do Trabalho. Ao escolher Portugal como minha nova casa,
+          reencontrei minhas raízes e construí uma ponte entre dois mundos que
+          fazem parte de mim. Meu coração é metade Brasil, metade Portugal.
           Recentemente, concluí a{" "}
-          <b>
+          <b className="bold">
             {" "}
             Pós-Graduação em Direito do Trabalho pela Universidade Católica do
             Porto{" "}
@@ -43,7 +44,7 @@ const About = () => {
         </p>
       </div>
       <div className="image-about">
-        <img src={about} alt="About-image" />
+        <img src={about} alt="Sobre Advogada Daniela Polido" />
       </div>
     </div>
   );

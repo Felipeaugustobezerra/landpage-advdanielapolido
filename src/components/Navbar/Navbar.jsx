@@ -1,23 +1,31 @@
 import "./Navbar.css";
-import { Link } from "react-router-dom";
 import Logo from "../../assets/Logo/Logo.png";
 import Drawer from "../Drawer/Drawer";
 
 const Navbar = () => {
+  const handleScroll = (className) => {
+    const section = document.querySelector(`.${className}`);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="container-navbar">
       <div className="logo-img">
-        <Link to="/">
+        <a href="#">
           <img src={Logo} alt="logo" />
-        </Link>
+        </a>
       </div>
       <div className="nav-links">
-        <Link to="/">Inicio</Link>
-        <Link to="/about">Sobre</Link>
-        <Link to="/services">Serviços e Especialidades</Link>
-        <Link to="/artigos">Artigos</Link>
-        <Link to="/books">E-books</Link>
-        <Link to="/contact">Contato</Link>
+        <span onClick={() => handleScroll("container-welcome")}>Início</span>
+        <span onClick={() => handleScroll("container-about")}>Sobre</span>
+        <span onClick={() => handleScroll("container-mission")}>
+          Serviços e Especialidades
+        </span>
+        <span onClick={() => handleScroll("artigos")}>Artigos</span>
+        <span onClick={() => handleScroll("ebooks")}>E-books</span>
+        <span onClick={() => handleScroll("contact")}>Contato</span>
       </div>
       <div className="dropdown_menu">
         <Drawer />
