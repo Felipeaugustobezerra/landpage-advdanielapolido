@@ -23,7 +23,7 @@ const Navbar = () => {
         <span onClick={() => handleScroll("container-mission")}>
           Serviços e Especialidades
         </span>
-        <span onClick={() => handleScroll("artigos")}>Artigos</span>
+        <span onClick={() => handleScroll("container-articles")}>Artigos</span>
         <span onClick={() => handleScroll("ebooks")}>E-books</span>
         <span onClick={() => handleScroll("contact")}>Contato</span>
       </div>
