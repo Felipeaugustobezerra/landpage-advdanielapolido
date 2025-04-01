@@ -10,94 +10,75 @@
   color: white;
   padding: 0 50px;
   z-index: 10;
+  background-color: var(--primary-color);
 }
 
 .logo-img img {
-  width: 200px;
+  height: 200px;
   cursor: pointer;
 }
 
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
 .nav-links span {
-  text-decoration: none;
-  font-size: 1.5rem;
-  margin-right: 2rem;
   color: var(--tertiary-color);
+  font-size: 1.5rem;
   cursor: pointer;
-  transition: color 0.3s;
+  transition: 0.3s ease;
 }
 
 .nav-links span:hover {
   color: #9d1f35;
+  transform: scale(1.05);
 }
 
-/* Esconde o menu hamburguer (Drawer) em telas grandes */
-@media (min-width: 1025px) {
-  .dropdown_menu {
-    display: none;
-  }
+/* Ícone do menu (aparece só no mobile) */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  color: var(--tertiary-color);
+  cursor: pointer;
 }
 
-/* Tablet e telas menores */
-@media screen and (max-width: 1024px) {
+/* Responsivo */
+@media (max-width: 768px) {
   .container-navbar {
     position: relative;
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.8) 10%,
-      rgba(0, 0, 0, 0.7) 52%,
-      rgba(0, 0, 0, 0.6) 92%
-    );
-    padding: 0 20px;
-    height: 150px;
-    z-index: 100;
   }
-
-  .logo-img img {
-    width: 180px;
-    margin-left: 10%;
-  }
-
   .nav-links {
-    display: none; /* Some os links normais */
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh);
+    background-color: var(--blue-color-primary);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
   }
 
-  .dropdown_menu {
-    position: relative;
-    right: -30%;
-  }
-}
-
-/* Tablet em modo retrato */
-@media screen and (max-width: 800px) {
-  .container-navbar {
-    padding: 0 15px;
+  .nav-links.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 11;
   }
 
-  .logo-img img {
-    width: 170px;
+  .nav-links span {
+    font-size: 1.5rem;
+    margin: 1rem 0;
   }
 
-  .dropdown_menu {
-    right: -24%;
-  }
-}
-
-/* Smartphones grandes */
-@media (max-width: 600px) {
-  .dropdown_menu {
-    right: -22%;
-  }
-}
-
-/* Smartphones pequenos */
-@media (max-width: 480px) {
-  .dropdown_menu {
-    right: -18%;
-  }
-}
-
-@media (max-width: 390px) {
-  .dropdown_menu {
-    right: -14%;
+  .menu-icon {
+    display: block;
+    z-index: 12;
   }
 }

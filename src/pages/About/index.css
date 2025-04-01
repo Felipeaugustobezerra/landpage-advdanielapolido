@@ -73,8 +73,11 @@ ul {
   }
 
   .about {
-    width: 90%;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    width: 100%;
+    padding: 0px;
     text-align: center;
   }
 

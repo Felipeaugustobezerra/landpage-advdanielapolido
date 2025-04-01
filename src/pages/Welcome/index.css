@@ -57,11 +57,29 @@
   letter-spacing: 0.1rem;
   font-size: 2rem;
 }
+.button-welcome {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--tertiary-color);
+  border: none;
+}
+.button-welcome a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button-welcome:hover {
+  background-color: var(--tertiary-color);
+  transition: all 0.3s ease;
+}
 
 /* ------------------- RESPONSIVO ------------------- */
 
 /* Tablets */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1290px) {
   .welcome {
     flex-direction: column;
     padding: 40px 20px;

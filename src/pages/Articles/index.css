@@ -1,6 +1,6 @@
 .container-articles {
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -14,42 +14,51 @@
     url("../../assets/Background/LIVROS.png");
   background-size: cover;
   background-position: center;
+  padding: 2rem;
+  box-sizing: border-box;
 }
+
 .container-articles h1 {
   font-size: 3rem;
   text-align: center;
   margin: 2.5rem;
 }
+
 .subtitles {
   text-align: center;
   margin: 2rem;
 }
+
 .subtitles h3 {
   font-size: 2.2rem;
   font-family: "Poppins", sans-serif;
 }
+
 .subtitles h4 {
   font-size: 1.5rem;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
 }
+
 .articles {
   display: flex;
   justify-content: center;
   width: 100%;
   align-items: center;
   padding: 3rem;
+  box-sizing: border-box;
 }
 
 .articles-items {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 40%;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 2rem;
 }
+
 .articles-items a {
   text-decoration: none;
   color: var(--primary-color);
@@ -59,10 +68,12 @@
   justify-content: center;
   align-items: center;
 }
+
 .articles-items a:hover {
   transform: scale(1.1);
   transition: 0.5s;
 }
+
 .articles-items-text h2 {
   text-decoration: none;
   color: var(--primary-color);
@@ -72,7 +83,80 @@
   text-align: center;
   margin: 1rem;
 }
+
 .articles-items img {
-  width: 50%;
-  height: 100%;
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+}
+
+/* Responsividade */
+@media (max-width: 1025px) {
+  .articles {
+  }
+  .articles-items {
+    width: 60%;
+  }
+
+  .container-articles h1 {
+    font-size: 2.5rem;
+  }
+
+  .subtitles h3 {
+    font-size: 2rem;
+  }
+
+  .subtitles h4 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .articles {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .articles-items {
+    width: 80%;
+  }
+
+  .container-articles h1 {
+    font-size: 2rem;
+  }
+
+  .subtitles h3 {
+    font-size: 1.8rem;
+  }
+
+  .subtitles h4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .articles-items {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .container-articles h1 {
+    font-size: 1.8rem;
+  }
+
+  .subtitles h3 {
+    font-size: 1.5rem;
+  }
+
+  .subtitles h4 {
+    font-size: 1rem;
+  }
+
+  .articles-items-text h2 {
+    font-size: 1rem;
+  }
+
+  .articles-items img {
+    max-width: 60%;
+  }
 }
