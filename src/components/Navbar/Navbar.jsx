@@ -34,8 +34,8 @@ const Navbar = () => {
           Serviços e Especialidades
         </span>
         <span onClick={() => handleScroll("container-articles")}>Artigos</span>
-        <span onClick={() => handleScroll("ebooks")}>E-books</span>
-        <span onClick={() => handleScroll("contact")}>Contato</span>
+        {/* <span onClick={() => handleScroll("ebooks")}>E-books</span> */}
+        <span onClick={() => handleScroll("footer")}>Contato</span>
       </div>
     </div>
   );
