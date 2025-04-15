@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./PrivacyPolicy.css";
+import "./privacyPolicy.css";
 
 function PrivacyPolicy() {
   const [isOpen, setIsOpen] = useState(false);
