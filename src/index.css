@@ -1,16 +1,17 @@
 @font-face {
   font-family: "Boston Angel";
-  src: url("./assets/fonts/Boston\ Angel\ Bold.otf") format("opentype");
-  src: url("./assets/fonts/Boston\ Angel\ Bold.ttf") format("truetype");
+  src: url("./assets/fonts/BostonAngel-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: "Boston Angel";
-  src: url("./assets/fonts/Boston\ Angel\ Light.otf") format("opentype");
-  src: url("./assets/fonts/Boston\ Angel\ Light.ttf") format("truetype");
+  src: url("./assets/fonts/BostonAngel-Light.woff2") format("woff2");
   font-weight: 100;
   font-style: normal;
+  font-display: swap;
 }
 * {
   margin: 0;

@@ -1,0 +1,133 @@
+/* Estilos gerais para o botão de abrir a política de privacidade */
+.privacy-button {
+  color: #ffcb09;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: underline;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.privacy-button:hover {
+  color: #ffcc00bb;
+}
+
+/* Estilos para o modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content-privacy {
+  background-color: var(--primary-color);
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 80vh; /* Limita a altura do modal a 80% da altura da tela */
+  overflow-y: auto; /* Ativa a rolagem vertical quando o conteúdo exceder a altura */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+  position: relative;
+  transform: scale(0.9);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+.modal-overlay .modal-content {
+  opacity: 1;
+  transform: scale(1);
+}
+.info_cookies_privacy li {
+  margin: 20px;
+  color: var(--tertiary-color);
+  list-style-type: disc;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.modal-content-privacy h2 {
+  margin-bottom: 10px;
+  font-size: 26px;
+  color: var(--tertiary-color);
+}
+
+.modal-content-privacy p {
+  margin: 10px 0;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+
+  color: var(--tertiary-color);
+}
+.client_compromisse li {
+  list-style-type: decimal;
+  padding: 10px;
+}
+
+.modal-content-privacy h3 {
+  margin-top: 20px;
+  font-size: 26px;
+  color: var(--tertiary-color);
+}
+
+.close-button {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.close-button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Desativa a rolagem do body quando o modal está aberto */
+.no-scroll {
+  overflow: hidden;
+}
+/* Estilos gerais (Desktop, telas grandes) */
+@media (min-width: 1025px) {
+  /* Layout para desktop e telas grandes */
+}
+
+/* Tablet em modo paisagem */
+@media (max-width: 1024px) {
+  /* Layout para tablets (paisagem) Ipad Pro*/
+}
+
+/* Tablet em modo retrato */
+@media (max-width: 768px) {
+  /* Layout para tablets (retrato) */
+}
+
+/* Smartphones grandes */
+@media (max-width: 600px) {
+  /* Layout para smartphones grandes */
+}
+
+/* Smartphones pequenos */
+@media (max-width: 480px) {
+  /* Layout para smartphones pequenos Iphone 15 Pro max */
+}
+@media (max-width: 390px) {
+  /* Layout para smartphones pequenos */
+}

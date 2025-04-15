@@ -6,7 +6,7 @@ const About = () => {
     <div className="container-about">
       <div className="about">
         <h1>Sobre</h1>
-        <p>
+        <h5>
           Me chamo <b className="bold">Daniela Polido</b> e, antes de tudo, sou
           filha, irmã, esposa e mãe. Foi a segurança da minha família que me fez
           sair da zona de conforto e repensar o significado de &quot;lar&quot;.
@@ -41,7 +41,7 @@ const About = () => {
               (Associação Brasileira de Advogados).
             </li>
           </ul>
-        </p>
+        </h5>
       </div>
       <div className="image-about">
         <img src={about} alt="Sobre Advogada Daniela Polido" />
