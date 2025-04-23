@@ -18,6 +18,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Boston Angel", sans-serif;
+  text-align: justify;
+  line-height: 2.5rem;
 }
 
 :root {

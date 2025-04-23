@@ -20,7 +20,7 @@ const Articles = () => {
           <Link to="https://direitocomparado.com/beneficios-trabalhistas-para-microempresas-em-portugal-o-que-voce-precisa-saber/">
             <img src={article1} alt="" />
             <div className="articles-items-text">
-              <h2>MI:o que você deve saber</h2>
+              <h2>MI: o que você deve saber</h2>
             </div>
           </Link>
         </div>

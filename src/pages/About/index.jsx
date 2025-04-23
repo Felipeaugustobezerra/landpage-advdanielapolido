@@ -9,8 +9,8 @@ const About = () => {
         <h5>
           Me chamo <b className="bold">Daniela Polido</b> e, antes de tudo, sou
           filha, irmã, esposa e mãe. Foi a segurança da minha família que me fez
-          sair da zona de conforto e repensar o significado de &quot;lar&quot;.
-          Minha paixão pelo Direito me acompanha{" "}
+          sair da zona de conforto e e repensar o lugar que chamo de
+          &quot;lar&quot;. Minha paixão pelo Direito me acompanha{" "}
           <b className="bold">há mais de 20 anos</b> , especialmente no campo do
           Direito do Trabalho. Ao escolher Portugal como minha nova casa,
           reencontrei minhas raízes e construí uma ponte entre dois mundos que
@@ -41,6 +41,17 @@ const About = () => {
               (Associação Brasileira de Advogados).
             </li>
           </ul>
+          <h5>
+            Minha missão é levar conhecimento sobre a legislação laboral em
+            Portugal, auxiliando imigrantes de diversas nacionalidades a
+            compreenderem seus direitos e obrigações no país. Acredito que a
+            informação transforma vidas e fortalece a jornada de quem busca
+            novas oportunidades. Este espaço é um convite para compartilhar
+            experiências, trocar conhecimento e refletir sobre diferentes
+            perspectivas. Vamos juntos construir um futuro melhor para as
+            próximas gerações, porque o que fazemos hoje molda o mundo que
+            deixaremos para nossos filhos.”
+          </h5>
         </h5>
       </div>
       <div className="image-about">

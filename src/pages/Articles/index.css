@@ -32,12 +32,14 @@
 .subtitles h3 {
   font-size: 2.2rem;
   font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 
 .subtitles h4 {
   font-size: 1.5rem;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
+  margin: 20px;
 }
 
 .articles {
@@ -67,6 +69,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .articles-items a:hover {
@@ -93,7 +96,10 @@
 /* Responsividade */
 @media (max-width: 1025px) {
   .articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
   }
+
   .articles-items {
     width: 60%;
   }
@@ -108,6 +114,8 @@
 
   .subtitles h4 {
     font-size: 1.3rem;
+    text-align: center;
+    margin-top: 20px;
   }
 }
 

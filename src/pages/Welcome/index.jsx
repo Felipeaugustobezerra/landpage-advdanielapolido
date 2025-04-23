@@ -13,7 +13,7 @@ const Welcome = () => {
         <div className="text-welcome">
           <div className="text">
             <h1>Dra. Daniela Polido</h1>
-            <p>direito trabalhista</p>
+            <p>Direito Trabalhista</p>
             <button className="button-welcome">
               <Link to="https://api.whatsapp.com/send/?phone=351912758571&text&type=phone_number&app_absent=0">
                 Entre em Contato
