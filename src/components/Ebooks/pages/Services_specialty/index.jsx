@@ -65,7 +65,7 @@ const Services_specialty = () => {
           <h3> Regularização de Imigrantes e Nacionalidade Portuguesa</h3>
           <p>
             Serviço destinado a pessoas que precisam regularizar sua residência
-            em território português, bem como, solicitação de pedidos de
+            em território portugues, bem como, solicitação de pedidos de
             nacionalidade portuguesa.
           </p>
           <button className="btn_more">

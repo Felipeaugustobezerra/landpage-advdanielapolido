@@ -1,4 +1,4 @@
-.container-articles {
+.container-ebooks {
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -6,19 +6,12 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  color: var(--primary-color);
-  background:
-    linear-gradient(rgba(213, 184, 149, 0.8), rgba(213, 184, 149, 0.8)),
-    url("../../assets/Background/LIVROS.png");
-  background-size: cover;
-  background-position: center;
+  background-color: var(--primary-color);
   padding: 2rem;
   box-sizing: border-box;
-  position: relative;
-  overflow: hidden;
 }
 
-.container-articles h1 {
+.container-ebooks h1 {
   font-size: 3rem;
   text-align: center;
   margin: 2.5rem;
@@ -51,7 +44,7 @@
   box-sizing: border-box;
 }
 
-.articles-items {
+.ebooks-items {
   display: flex;
   flex-direction: column;
   width: 40%;
@@ -61,7 +54,7 @@
   margin: 2rem;
 }
 
-.articles-items a {
+.ebooks-items a {
   text-decoration: none;
   color: var(--primary-color);
   display: flex;
@@ -72,12 +65,12 @@
   cursor: pointer;
 }
 
-.articles-items a:hover {
+.ebooks-items a:hover {
   transform: scale(1.1);
   transition: 0.5s;
 }
 
-.articles-items-text h2 {
+.ebooks-items-text h2 {
   text-decoration: none;
   color: var(--primary-color);
   cursor: pointer;
@@ -87,7 +80,7 @@
   margin: 1rem;
 }
 
-.articles-items img {
+.ebooks-items img {
   width: 100%;
   height: auto;
   max-width: 300px;
@@ -95,89 +88,50 @@
 
 /* Responsividade */
 @media (max-width: 1025px) {
-  .articles {
+  .ebooks {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
   }
-  /* .container-articles::after {
-    width: 60px;
-  } */
 
-  .articles-items {
+  .ebooks-items {
     width: 60%;
   }
 
-  .container-articles h1 {
+  .container-ebooks h1 {
     font-size: 2.5rem;
-  }
-
-  .subtitles h3 {
-    font-size: 2rem;
-  }
-
-  .subtitles h4 {
-    font-size: 1.3rem;
-    text-align: center;
-    margin-top: 20px;
   }
 }
 
 @media (max-width: 768px) {
-  .articles {
+  .ebooks-items {
     flex-direction: column;
     padding: 2rem;
   }
-  /* .container-articles::after,
-  .container-articles::before {
-    width: 40px;
-  } */
 
-  .articles-items {
+  .ebooks-items {
     width: 80%;
   }
 
-  .container-articles h1 {
+  .container-ebooks h1 {
     font-size: 2rem;
-  }
-
-  .subtitles h3 {
-    font-size: 1.8rem;
-  }
-
-  .subtitles h4 {
-    font-size: 1.2rem;
   }
 }
 
 @media (max-width: 480px) {
-  .articles-items {
+  .ebooks-items {
     width: 100%;
     margin: 1rem 0;
   }
 
-  .container-articles h1 {
+  .container-ebooks h1 {
     font-size: 1.8rem;
   }
-  .container-articles::after {
-    /* top: -8%;
-    left: -41%;
-    width: 500px;
-    height: 500px; */
-  }
 
-  .subtitles h3 {
-    font-size: 1.5rem;
-  }
-
-  .subtitles h4 {
+  .ebooks-items-text h2 {
     font-size: 1rem;
   }
 
-  .articles-items-text h2 {
-    font-size: 1rem;
-  }
-
-  .articles-items img {
+  .ebooks-items img {
     max-width: 60%;
   }
 }

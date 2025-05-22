@@ -7,15 +7,15 @@
   justify-content: center;
   align-items: center;
   color: var(--primary-color);
-  background:
-    linear-gradient(rgba(213, 184, 149, 0.8), rgba(213, 184, 149, 0.8)),
+  background: linear-gradient(
+      rgba(213, 184, 149, 0.8),
+      rgba(213, 184, 149, 0.8)
+    ),
     url("../../assets/Background/LIVROS.png");
   background-size: cover;
   background-position: center;
   padding: 2rem;
   box-sizing: border-box;
-  position: relative;
-  overflow: hidden;
 }
 
 .container-articles h1 {
@@ -99,9 +99,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
   }
-  /* .container-articles::after {
-    width: 60px;
-  } */
 
   .articles-items {
     width: 60%;
@@ -127,10 +124,6 @@
     flex-direction: column;
     padding: 2rem;
   }
-  /* .container-articles::after,
-  .container-articles::before {
-    width: 40px;
-  } */
 
   .articles-items {
     width: 80%;
@@ -157,12 +150,6 @@
 
   .container-articles h1 {
     font-size: 1.8rem;
-  }
-  .container-articles::after {
-    /* top: -8%;
-    left: -41%;
-    width: 500px;
-    height: 500px; */
   }
 
   .subtitles h3 {

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./navbar.css";
-import Logo from "../../assets/Logo/Logo.png";
+import Logo from "../../../../assets/Logo/logo.png"; // Substitua pelo caminho correto da sua imagem
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
@@ -28,14 +28,10 @@ const Navbar = () => {
       </div>
 
       <div className={`nav-links ${drawerOpen ? "open" : ""}`}>
-        <span onClick={() => handleScroll("container-welcome")}>Início</span>
+        <span onClick={() => handleScroll("container-welcome")}>Home</span>
         <span onClick={() => handleScroll("container-about")}>Sobre</span>
-        <span onClick={() => handleScroll("container-mission")}>
-          Serviços e Especialidades
-        </span>
-        <span onClick={() => handleScroll("container-articles")}>Artigos</span>
-        {/* <span onClick={() => handleScroll("container-ebooks")}>E-books</span> */}
-        <span onClick={() => handleScroll("footer")}>Contato</span>
+        <span onClick={() => handleScroll("container-mission")}>Conteúdo</span>
+        <span onClick={() => handleScroll("container-articles")}>Compre</span>
       </div>
     </div>
   );

@@ -39,10 +39,7 @@ const Footer = () => {
               <IoLogoLinkedin />
             </span>
           </Link>
-          <Link
-            to="https://www.youtube.com/@DireitodoTrabalhoemPortugal"
-            target="_blank"
-          >
+          <Link to=" https://youtube.com/shorts/o6Uw7uMO0ig" target="_blank">
             <span className="YouTube">
               <IoLogoYoutube />
             </span>

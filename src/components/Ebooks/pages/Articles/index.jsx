@@ -20,7 +20,7 @@ const Articles = () => {
           <Link to="https://direitocomparado.com/beneficios-trabalhistas-para-microempresas-em-portugal-o-que-voce-precisa-saber/">
             <img src={article1} alt="" />
             <div className="articles-items-text">
-              <h2>Micro Empresário: o que você deve saber</h2>
+              <h2>Microempreendedor: o que você deve saber</h2>
             </div>
           </Link>
         </div>
@@ -49,16 +49,3 @@ const Articles = () => {
 };
 
 export default Articles;
-
-// .container-articles::after {
-//   content: "";
-//   position: absolute;
-//   bottom: 30%;
-//   left: -20%;
-//   width: 100%; /* ajuste conforme o tamanho da forma */
-//   height: 100%;
-//   background-image: url("../../assets/Forms/formas_bordô.png");
-//   background-repeat: repeat-y;
-//   background-size: auto 90%;
-//   z-index: 1;
-// }
