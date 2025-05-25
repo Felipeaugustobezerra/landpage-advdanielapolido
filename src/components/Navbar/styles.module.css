@@ -45,7 +45,7 @@
 }
 
 /* Responsivo */
-@media (max-width: 912px) {
+@media (max-width: 1024px) {
   .container_navbar {
     position: relative;
   }

@@ -51,14 +51,15 @@
 }
 
 .text_service h3 {
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   font-weight: 200;
   background-color: var(--tertiary-color);
   color: var(--primary-color);
   border-radius: 10px;
   margin-bottom: 20px;
-  padding: 5px;
+  padding: 10px;
   width: fit-content;
+  text-align: start;
 }
 
 .text_service p {

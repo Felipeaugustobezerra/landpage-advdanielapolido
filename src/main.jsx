@@ -14,12 +14,14 @@ import Articles from "./pages/Articles";
 import CookieConsent from "./components/Cookies/Cookies";
 import Ebooks from "./pages/Ebooks"; // ✅ Página que terá rota própria
 import Landpage1 from "./Landpages_ebooks/Landpage_1";
+import ScrollToTop from "./components/ScroolTop/ScrollToTop";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <CookiesProvider>
       <BrowserRouter>
         <CookieConsent />
+        <ScrollToTop />
         <Routes>
           <Route
             path="/"

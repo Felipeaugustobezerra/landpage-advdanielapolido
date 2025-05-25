@@ -1,6 +1,20 @@
 .container_welcome {
   width: 100%;
+  position: relative;
+  overflow: hidden;
 }
+/* .container_welcome::before {
+  content: "";
+  position: absolute;
+  bottom: -370px;
+  right: -330px;
+  width: 100%;
+  height: 800px;
+  background-image: url("../../assets/Forms/formas_bege.png");
+  background-repeat: repeat-y;
+  background-size: auto 100%;
+  background-position: bottom right;
+} */
 
 .welcome {
   display: flex;
@@ -79,9 +93,16 @@
 }
 
 /* ------------------- RESPONSIVO ------------------- */
-
+@media screen and (max-width: 1366px) {
+  .container_welcome::before {
+    bottom: -280px;
+    right: -250px;
+    width: 100%;
+    height: 600px;
+  }
+}
 /* Tablets */
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 1024px) {
   .welcome {
     flex-direction: column;
     padding: 40px 20px;
