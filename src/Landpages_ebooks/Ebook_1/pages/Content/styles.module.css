@@ -25,7 +25,7 @@
 .list_content {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(4, 2fr); /* 4 colunas no desktop */
+  grid-template-columns: repeat(3, 2fr); /* 4 colunas no desktop */
   gap: 20px;
   padding-bottom: 7rem;
   width: 100%;

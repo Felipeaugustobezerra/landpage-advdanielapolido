@@ -100,7 +100,7 @@
 }
 
 /* Responsividade */
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
   .ebooks {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
@@ -127,6 +127,10 @@
 
   .container_ebooks h1 {
     font-size: 2rem;
+  }
+  .ebooks_items_text h2 {
+    font-size: 1rem;
+    margin: 0;
   }
 }
 

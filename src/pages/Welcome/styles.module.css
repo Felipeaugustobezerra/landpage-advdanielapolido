@@ -166,6 +166,9 @@
   .text_welcome .text {
     font-size: 1.5rem;
   }
+  .text_welcome .text h1 {
+    font-size: 2rem;
+  }
 
   .text_welcome .text p {
     font-size: 1.2rem;
