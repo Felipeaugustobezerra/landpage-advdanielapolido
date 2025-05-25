@@ -3,7 +3,7 @@
   min-height: 100vh;
   background:
     linear-gradient(rgba(34, 52, 80, 0.8), rgba(34, 52, 80, 0.8)),
-    url("../../../../assets/Ebooks/ebook_1/content/BACKGROUND2.png");
+    url("../../../../assets/backgrounds/books.png");
   background-size: cover;
   background-position: center;
   display: flex;
