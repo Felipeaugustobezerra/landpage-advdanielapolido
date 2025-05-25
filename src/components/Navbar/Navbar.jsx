@@ -59,7 +59,7 @@ const Navbar = () => {
       </div>
 
       <div className={`${Styles.nav_links} ${drawerOpen ? Styles.open : ""}`}>
-        <span onClick={() => handleScroll("container_welcome")}>Início</span>
+        {/* <span onClick={() => handleScroll("container_welcome")}>Início</span> */}
         <span onClick={() => handleScroll("container_about")}>Sobre</span>
         <span onClick={() => handleScroll("container_services")}>
           Serviços e Especialidades
