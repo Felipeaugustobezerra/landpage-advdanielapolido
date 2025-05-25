@@ -1,0 +1,77 @@
+.container_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+.container_info::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: -100px;
+  width: 400px;
+  height: 300px;
+  background-image: url("../../../../assets/Forms/forma_bege1.png");
+  background-size: contain;
+  background-position: top left;
+  background-repeat: repeat-x;
+  transform: rotate(-90deg);
+}
+.container_info .info1 h2 {
+  width: 90%;
+  color: var(--tertiary-color);
+  font-size: 1.8rem;
+  padding: 80px;
+  text-align: justify;
+}
+.container_info .info2 h2 {
+  text-align: center;
+  width: 100%;
+  color: var(--tertiary-color);
+  font-size: 1.9rem;
+  font-weight: 300;
+  padding: 50px;
+}
+.container_info .info1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  background-color: var(--primary-color);
+}
+.container_info .info2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--blue-color-primary);
+  border: 2px solid var(--blue-color-secondary);
+}
+@media screen and (max-width: 768px) {
+  .container_info::before {
+    display: none;
+  }
+  @media screen and (max-width: 480px) {
+    .container_info::before {
+      display: none;
+    }
+    .container_info .info1 h2 {
+      width: 100%;
+      color: var(--tertiary-color);
+      font-size: 1.5rem;
+      padding: 50px;
+      text-align: center;
+    }
+    .container_info .info2 h2 {
+      text-align: center;
+      width: 100%;
+      color: var(--tertiary-color);
+      font-size: 1.5rem;
+      font-weight: 300;
+      padding: 30px;
+    }
+  }
+}

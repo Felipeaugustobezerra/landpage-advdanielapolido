@@ -1,15 +1,18 @@
-import "./index.css";
+import Styles from "./styles.module.css";
 import { Link } from "react-router-dom";
 import ebook1 from "../../assets/Ebooks/E-BOOK.png";
 
 const Ebooks = () => {
   return (
-    <div className="container-ebooks">
+    <div className={Styles.container_ebooks} id="container_ebooks">
       <h1>E-books</h1>
-      <div className="ebooks-items">
-        <Link to="https://direitocomparado.com/saude-e-seguranca-do-trabalhador-em-portugal/">
+      <div className={Styles.ebooks_items}>
+        <Link
+          to="/Guia_para_empreendedores"
+          className={Styles.ebooks_items_link}
+        >
           <img src={ebook1} alt="" />
-          <div className="ebooks-items-text">
+          <div className={Styles.ebooks_items_text}>
             <h2>Saúde e segurança do trabalhador em Portugal</h2>
           </div>
         </Link>

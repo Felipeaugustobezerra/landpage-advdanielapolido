@@ -1,0 +1,155 @@
+.container_ebooks {
+  background-color: var(--tertiary-color);
+  padding: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.ebooks_items {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.youtube_thumbnail {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+}
+.youtube_thumbnail:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.youtube_thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.play_button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.ebooks_items_text {
+  max-width: 50%;
+  color: var(--blue-color-primary);
+}
+
+.ebooks_items_text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: start;
+  line-height: 3rem;
+}
+
+.ebooks_items_text h2 {
+  font-size: 1.8rem;
+  font-weight: normal;
+  font-family: "Poppins", sans-serif;
+  text-align: start;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+.button_ebooks {
+  display: inline-block;
+  margin-top: 2rem;
+  background-color: #1e2d44;
+  color: #fff3e0;
+  padding: 0.9rem 4rem;
+  font-size: 1.7rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s;
+  color: var(--tertiary-color);
+  letter-spacing: 2px;
+}
+
+.button_ebooks:hover {
+  background-color: #142030;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+.youtube_thumbnail_link {
+  display: block;
+  width: 400px;
+  height: 281px;
+  border-radius: 32px;
+  overflow: hidden;
+  border: 10px solid #1e2d44;
+  text-decoration: none;
+}
+/* ----------- Tablets ----------- */
+@media screen and (max-width: 1024px) {
+  .container_ebooks {
+    padding: 6rem 2rem;
+  }
+
+  .ebooks_items {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .ebooks_items_text {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .ebooks_items_text h1,
+  .ebooks_items_text h2 {
+    text-align: center;
+  }
+
+  .button_ebooks {
+    font-size: 1.5rem;
+    padding: 0.9rem 3rem;
+  }
+
+  .youtube_thumbnail_link {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* ----------- Smartphones ----------- */
+@media screen and (max-width: 600px) {
+  .container_ebooks {
+    padding: 4rem 1rem;
+  }
+
+  .ebooks_items_text h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .ebooks_items_text h2 {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+  .button_ebooks {
+    font-size: 1.3rem;
+    padding: 0.8rem 2.5rem;
+  }
+
+  .youtube_thumbnail_link {
+    width: 100%;
+    border-width: 6px;
+  }
+}

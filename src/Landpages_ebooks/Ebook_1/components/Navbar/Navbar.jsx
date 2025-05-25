@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
-import Styles from "./styles.module.css";
-import Logo from "../../assets/Logo/Logo.png";
+import Styles from "./style.module.css";
+import Logo from "../../../../assets/Logo/logo.png"; // Substitua pelo caminho correto da sua imagem
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
@@ -59,14 +59,10 @@ const Navbar = () => {
       </div>
 
       <div className={`${Styles.nav_links} ${drawerOpen ? Styles.open : ""}`}>
-        <span onClick={() => handleScroll("container_welcome")}>Início</span>
+        <span onClick={() => handleScroll("container_welcome")}>Home</span>
         <span onClick={() => handleScroll("container_about")}>Sobre</span>
-        <span onClick={() => handleScroll("container_services")}>
-          Serviços e Especialidades
-        </span>
-        <span onClick={() => handleScroll("container_articles")}>Artigos</span>
-        <span onClick={() => handleScroll("container_ebooks")}>E-books</span>
-        <span onClick={() => handleScroll("footer")}>Contato</span>
+        <span onClick={() => handleScroll("container_content")}>Conteúdo</span>
+        <span onClick={() => handleScroll("container_ebooks_buy")}>Compre</span>
       </div>
     </div>
   );

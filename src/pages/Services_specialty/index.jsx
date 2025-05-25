@@ -1,4 +1,4 @@
-import "./index.css";
+import Styles from "./styles.module.css";
 import { Link } from "react-router-dom";
 import Service1 from "../../assets/Services_/Service_1.png";
 import Service2 from "../../assets/Services_/Service_2.png";
@@ -6,14 +6,14 @@ import Service3 from "../../assets/Services_/Service_3.png";
 
 const Services_specialty = () => {
   return (
-    <div className="container-services">
-      <h1 className="title-services">Serviços e Especialidades</h1>
-      <div className="list-services">
-        <div className="images-service">
+    <div className={Styles.container_services} id="container_services">
+      <h1 className={Styles.title_services}>Serviços e Especialidades</h1>
+      <div className={Styles.list_services}>
+        <div className={Styles.images_service}>
           <img src={Service1} alt="Consultoria Padrão" />
         </div>
 
-        <div className="text-service">
+        <div className={Styles.text_service}>
           <h3>Consultoria Padrão Pessoa Física/Singular</h3>
           <p>
             Esta consultoria é destinada a pessoas que necessitam de uma análise
@@ -23,18 +23,18 @@ const Services_specialty = () => {
             consultoria, ocasião em que serão analisados os documentos
             pertinentes e a melhor estratégia para a solução do seu problema.
           </p>
-          <button className="btn_more">
+          <button className={Styles.btn_more}>
             <Link to="https://youtube.com/shorts/AXdIyke3PHQ" target="_blank">
               Saiba mais
             </Link>
           </button>
         </div>
       </div>
-      <div className="list-services">
-        <div className="images-service">
+      <div className={Styles.list_services}>
+        <div className={Styles.images_service}>
           <img src={Service2} alt="Consultoria Padrão" />
         </div>
-        <div className="text-service">
+        <div className={Styles.text_service}>
           <h3>Consultoria para Empreendedores</h3>
           <p>
             A Consultoria para Empreendedores é destinada a quem deseja
@@ -47,7 +47,7 @@ const Services_specialty = () => {
             não estão inclusas, sendo contratadas separadamente conforme
             necessidade e acordo entre as partes.
           </p>
-          <button className="btn_more">
+          <button className={Styles.btn_more}>
             <Link
               to="https://youtube.com/shorts/FDCZoosNo14?feature=share"
               target="_blank"
@@ -57,18 +57,18 @@ const Services_specialty = () => {
           </button>
         </div>
       </div>
-      <div className="list-services">
-        <div className="images-service">
+      <div className={Styles.list_services}>
+        <div className={Styles.images_service}>
           <img src={Service3} alt="Consultoria Padrão" />
         </div>
-        <div className="text-service">
+        <div className={Styles.text_service}>
           <h3> Regularização de Imigrantes e Nacionalidade Portuguesa</h3>
           <p>
             Serviço destinado a pessoas que precisam regularizar sua residência
             em território português, bem como, solicitação de pedidos de
             nacionalidade portuguesa.
           </p>
-          <button className="btn_more">
+          <button className={Styles.btn_more}>
             <Link
               to="https://youtube.com/shorts/uNMelQpbuXM?feature=share"
               target="_blank"
@@ -78,11 +78,11 @@ const Services_specialty = () => {
           </button>
         </div>
       </div>
-      <div className="list-services">
-        <div className="images-service">
+      <div className={Styles.list_services}>
+        <div className={Styles.images_service}>
           <img src={Service2} alt="Consultoria Padrão" />
         </div>
-        <div className="text-service">
+        <div className={Styles.text_service}>
           <h3> Certificação de cópias e Reconhecimento de assinaturas</h3>
           <p>
             Em Portugal, os advogados estão legalmente habilitados a reconhecer
@@ -90,7 +90,7 @@ const Services_specialty = () => {
             autenticidade e validade jurídica. Prestamos este serviço com rigor
             e rapidez, assegurando conformidade com a legislação vigente.
           </p>
-          <button className="btn_more">
+          <button className={Styles.btn_more}>
             <Link
               to="https://youtube.com/shorts/ENAyELA8hJw?feature=share"
               target="_blank"

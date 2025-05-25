@@ -1,0 +1,84 @@
+.container_navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  color: white;
+  padding: 0 50px;
+  z-index: 10;
+  background-color: var(--primary-color);
+}
+
+.logo_img img {
+  height: 200px;
+  cursor: pointer;
+}
+
+.nav_links {
+  display: flex;
+  gap: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav_links span {
+  color: var(--tertiary-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav_links span:hover {
+  color: #9d1f35;
+  transform: scale(1.05);
+}
+
+/* Ícone do menu (aparece só no mobile) */
+.menu_icon {
+  display: none;
+  font-size: 1.8rem;
+  color: var(--tertiary-color);
+  cursor: pointer;
+}
+
+/* Responsivo */
+@media (max-width: 912px) {
+  .container_navbar {
+    position: relative;
+  }
+  .nav_links {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh);
+    background-color: var(--blue-color-primary);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .nav_links.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 11;
+  }
+
+  .nav_links span {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .menu_icon {
+    display: block;
+    z-index: 12;
+  }
+}

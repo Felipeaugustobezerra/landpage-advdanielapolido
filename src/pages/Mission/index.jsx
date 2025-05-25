@@ -1,17 +1,17 @@
-import "./index.css";
+import Styles from "./styles.module.css";
 
 const Mission = () => {
   return (
-    <div className="container-mission">
+    <div className={Styles.container_mission}>
       <h1>Áreas de Atuação e Serviços</h1>
       <h3>
         Seja no Brasil ou em Portugal, assessoria e consultoria jurídica
         personalizada para atender às suas necessidades com profissionalismo e
         compromisso, com atendimentos presenciais ou online.
       </h3>
-      <div className="container-text">
-        <div className="text-mission">
-          <h4 className="country-work">Atuação no Brasil:</h4>
+      <div className={Styles.container_text}>
+        <div className={Styles.text_mission}>
+          <h4 className={Styles.country_work}>Atuação no Brasil:</h4>
           <p>
             Com vasta experiência no Direito Civil, de Família e Trabalhista,
             atendimento para pessoas físicas e jurídicas, com foco especial em
@@ -34,8 +34,8 @@ const Mission = () => {
           </ul>
         </div>
 
-        <div className="text-mission">
-          <h4 className="country-work">Atuação em Portugal:</h4>
+        <div className={Styles.text_mission}>
+          <h4 className={Styles.country_work}>Atuação em Portugal:</h4>
           <p>
             Em território português, auxílio na obtenção da nacionalidade e na
             regularização de imigrantes, além de oferecer suporte jurídico
