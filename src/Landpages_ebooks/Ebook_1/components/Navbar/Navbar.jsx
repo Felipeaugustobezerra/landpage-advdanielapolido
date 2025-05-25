@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import Styles from "./style.module.css";
-import Logo from "../../../../assets/Logo/logo.png"; // Substitua pelo caminho correto da sua imagem
+import Logo from "../../../../assets/Logo/Logo.png"; // Substitua pelo caminho correto da sua imagem
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
