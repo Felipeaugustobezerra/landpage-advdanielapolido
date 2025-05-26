@@ -13,7 +13,7 @@ const Ebooks = () => {
         >
           <img src={ebook1} alt="" />
           <div className={Styles.ebooks_items_text}>
-            <h2>Guia para Empreendedores Estrangeiros em portugal</h2>
+            <h2>Guia para Empreendedores Estrangeiros em Portugal</h2>
           </div>
         </Link>
       </div>
