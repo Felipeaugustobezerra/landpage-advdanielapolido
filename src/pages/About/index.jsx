@@ -10,7 +10,7 @@ const About = () => {
           Me chamo <b className={Styles.bold}>Daniela Polido</b> e, antes de
           tudo, sou filha, irmã, esposa e mãe.Foi a segurança da minha família
           que me fez sair da zona de conforto e repensar o lugar que chamo de
-          &quot;lar&quot;.Minha paixão pelo Direito me acompanha
+          &quot;lar&quot;. Minha paixão pelo Direito me acompanha
           <b className={Styles.bold}> há mais de 20 anos</b> , especialmente no
           campo do Direito do Trabalho. Ao escolher Portugal como minha nova
           casa, reencontrei minhas raízes e construí uma ponte entre dois mundos
