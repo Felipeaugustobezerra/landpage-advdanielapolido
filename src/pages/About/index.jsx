@@ -8,7 +8,7 @@ const About = () => {
         <h1>Sobre</h1>
         <h5>
           Me chamo <b className={Styles.bold}>Daniela Polido</b> e, antes de
-          tudo, sou filha, irmã, esposa e mãe.Foi a segurança da minha família
+          tudo, sou filha, irmã, esposa e mãe. Foi a segurança da minha família
           que me fez sair da zona de conforto e repensar o lugar que chamo de
           &quot;lar&quot;. Minha paixão pelo Direito me acompanha
           <b className={Styles.bold}> há mais de 20 anos</b> , especialmente no
@@ -20,9 +20,9 @@ const About = () => {
             Pós-Graduação em Direito do Trabalho pela Universidade Católica do
             Porto
           </b>
-          , consolidando minha atuação no cenário jurídico
-          internacional.Atualmente, exerço diferentes funções que refletem meu
-          compromisso com o Direito do Trabalho em âmbito global:
+          , consolidando minha atuação no cenário jurídico internacional.
+          Atualmente, exerço diferentes funções que refletem meu compromisso com
+          o Direito do Trabalho em âmbito global:
           <ul className={Styles.list}>
             <li className={Styles.list_about}>
               Presidente da Comissão de Direito Internacional do Trabalho pelo
