@@ -15,6 +15,7 @@ import CookieConsent from "./components/Cookies/Cookies";
 import Ebooks from "./pages/Ebooks"; // ✅ Página que terá rota própria
 import Landpage1 from "./Landpages_ebooks/Landpage_1";
 import ScrollToTop from "./components/ScroolTop/ScrollToTop";
+import Country from "./pages/countries_service";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -30,6 +31,7 @@ createRoot(document.getElementById("root")).render(
                 <Welcome />
                 <About />
                 <Mission />
+                <Country />
                 <Services_specialty />
                 <Articles />
                 <Ebooks />

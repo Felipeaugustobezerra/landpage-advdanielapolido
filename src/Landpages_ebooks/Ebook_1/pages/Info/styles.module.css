@@ -50,6 +50,11 @@
   background-color: var(--blue-color-primary);
   border: 2px solid var(--blue-color-secondary);
 }
+@media screen and (max-width: 1024px) {
+  .container_info .info2 h2 {
+    width: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   .container_info::before {
     display: none;

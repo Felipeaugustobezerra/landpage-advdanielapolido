@@ -1,6 +1,6 @@
 import Styles from "./styles.module.css";
 import Navbar from "../../components/Navbar/Navbar";
-import cover from "../../../../assets/Fotos/Cover.png"; // Substitua pelo caminho correto da sua imagem
+import cover from "../../../../assets/Ebooks/ebook_1/welcome/DRADANIELA.png"; // Substitua pelo caminho correto da sua imagem
 import { Link } from "react-router-dom";
 const Welcome = () => {
   return (
