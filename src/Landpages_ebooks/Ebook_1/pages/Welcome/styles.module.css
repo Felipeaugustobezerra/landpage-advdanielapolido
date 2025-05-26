@@ -75,6 +75,9 @@ b {
   border: none;
 }
 .button_welcome a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: var(--blue-color-primary);
   font-size: 2rem;
