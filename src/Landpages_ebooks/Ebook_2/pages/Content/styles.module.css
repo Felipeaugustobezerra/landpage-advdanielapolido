@@ -3,7 +3,7 @@
   min-height: 100vh;
   background:
     linear-gradient(rgba(34, 52, 80, 0.8), rgba(34, 52, 80, 0.8)),
-    url("../../../../assets/Ebooks/ebook_1/Backgrounds/books.png");
+    url("../../../../assets/Ebooks/ebook_2/Backgrounds/Processos.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -16,28 +16,30 @@
 .container_content::before {
   content: "";
   position: absolute;
-  top: -60px;
-  left: 0px;
-  width: 100%;
-  height: 180px;
-  background-image: url("../../../../assets/Forms/forma_bege1.png");
+  bottom: -100px;
+  left: -50px;
+  width: 20%;
+  height: 50%;
+  background-image: url("../../../../assets/Ebooks/ebook_2/Forms/formas_bege2.png");
   background-repeat: repeat-y;
-  background-size: auto 100%;
-  background-position: top left;
+  background-size: contain;
+  background-position: bottom left;
+  z-index: 1;
+  overflow: hidden;
 }
 .container_content::after {
   content: "";
   position: absolute;
-  bottom: -70px;
-  right: 0;
-  width: 100%;
-  height: 180px;
-  background-image: url("../../../../assets/Forms/forma_bege1.png");
+  top: 30px;
+  right: 0px;
+  width: 20%;
+  height: 50%;
+  background-image: url("../../../../assets/Ebooks/ebook_2/Forms/formas_bege.png");
   background-repeat: repeat-y;
-  background-size: auto 100%;
-  background-position: bottom right;
-  z-index: 1;
+  background-size: contain;
+  background-position: top right;
   overflow: hidden;
+  z-index: 1;
 }
 
 .container_content h1 {
@@ -51,12 +53,19 @@
 .list_content {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(3, 2fr); /* 4 colunas no desktop */
-  gap: 20px;
-  padding-bottom: 7rem;
   width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
   max-width: 1200px;
-  justify-content: center; /* 🔧 centraliza última linha com menos itens */
+  justify-items: center; /* centraliza os itens individualmente */
+}
+
+.list_content li:nth-last-child(2) {
+  grid-column: 2; /* começa na 2ª coluna */
+}
+
+.list_content li:last-child {
+  grid-column: 3; /* fica na 3ª coluna */
 }
 
 .list_content li {
@@ -96,6 +105,12 @@
     padding-bottom: 5rem;
   }
 }
+@media (max-width: 900px) {
+  .container_content::before,
+  .container_content::after {
+    display: none;
+  }
+}
 
 /* ----------- Smartphones ----------- */
 @media (max-width: 600px) {
@@ -109,7 +124,8 @@
   }
 
   .list_content {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 16px;
     padding-bottom: 4rem;
   }

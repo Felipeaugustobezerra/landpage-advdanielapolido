@@ -13,7 +13,8 @@ import Services_specialty from "./pages/Services_specialty";
 import Articles from "./pages/Articles";
 import CookieConsent from "./components/Cookies/Cookies";
 import Ebooks from "./pages/Ebooks"; // ✅ Página que terá rota própria
-import Landpage1 from "./Landpages_ebooks/Landpage_1";
+import Landpage1 from "./Landpages_ebooks/Ebook_1/Landpage_1";
+import Landpage2 from "./Landpages_ebooks/Ebook_2/Landpage_2";
 import ScrollToTop from "./components/ScroolTop/ScrollToTop";
 import Country from "./pages/countries_service";
 
@@ -40,6 +41,7 @@ createRoot(document.getElementById("root")).render(
             }
           />
           <Route path="/Guia_para_empreendedores" element={<Landpage1 />} />
+          <Route path="/Guia_do_trabalhador" element={<Landpage2 />} />
         </Routes>
       </BrowserRouter>
     </CookiesProvider>

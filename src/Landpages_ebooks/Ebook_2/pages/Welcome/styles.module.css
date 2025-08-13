@@ -3,7 +3,7 @@
 
   background:
     linear-gradient(rgba(34, 52, 80, 0.6), rgba(34, 52, 80, 0.7)),
-    url("../../../../assets/Ebooks/ebook_1/Backgrounds/office.png");
+    url("../../../../assets/Ebooks//ebook_2/Backgrounds/Balanca_justica.png");
   background-size: cover;
   background-position: center;
 }
@@ -35,7 +35,7 @@
 }
 
 .image_welcome img {
-  width: 80%;
+  width: 60%;
   object-fit: cover;
   position: relative;
   z-index: 1;
@@ -68,7 +68,7 @@ b {
   line-height: 1.8rem;
 }
 .button_welcome {
-  margin-top: 20px;
+  margin-top: 60px;
   padding: 10px 50px;
   border-radius: 25px;
   background-color: var(--tertiary-color);
