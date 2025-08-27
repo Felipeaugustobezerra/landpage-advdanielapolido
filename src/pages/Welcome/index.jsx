@@ -16,7 +16,7 @@ const Welcome = () => {
             <p>Advogada</p>
             <button className={Styles.button_welcome}>
               <Link
-                to="https://api.whatsapp.com/send/?phone=351912758571&text&type=phone_number&app_absent=0"
+                to="https://api.whatsapp.com/send/?phone=351927684195&text&type=phone_number&app_absent=0"
                 target="_blank"
               >
                 Entre em Contato
